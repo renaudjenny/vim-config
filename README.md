@@ -3,13 +3,20 @@
 ## Plugins
 
 ```bash
-git clone https://github.com/w0rp/ale.git ~/.vim/pack/git-plugins/start/ale
-git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+cd ~/.vim/bundle
+git clone https://github.com/w0rp/ale.git
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/airblade/vim-gitgutter
+git clone https://github.com/mxw/vim-jsx
 ```
 
 ## .vimrc
 
 ```
+execute pathogen#infect()
+
 " Basics
 syntax on
 set number
@@ -23,14 +30,6 @@ set softtabstop=2
 set smartindent
 
 let g:airline#extensions#ale#enabled = 1
-let g:ale_linters = {
-\   'javascript': ['standard', 'flow'],
-\}
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['standard'],
-\}
+let g:ale_sign_column_always = 1
 let g:ale_completion_enabled = 1
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
 ```
