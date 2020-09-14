@@ -31,7 +31,7 @@ set softtabstop=4
 set smartindent
 
 " remaps
-nmap <C-P> :FZF src<CR>
+nmap <C-P> :FZF<CR>
 nmap <C-B> :Buffers<CR>
 
 let g:NERDTreeWinSize = 50
