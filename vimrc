@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
-Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'keith/swift.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -15,9 +14,7 @@ set number
 set showcmd
 set listchars=eol:¬,tab:>•,trail:~,extends:>,precedes:<,space:␣
 set wildmenu
-set wildignore=node_modules/*
 set completeopt=menu,menuone,preview,noselect,noinsert
-set updatetime=500
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+\%#\@<!$/
 
