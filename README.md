@@ -17,3 +17,5 @@ git config --global core.editor /usr/bin/vim
 ```
 
 ## [.vimrc](vimrc)
+
+## [Vim cheat sheet](http://windowsbulletin.com/vimcheat/)
