@@ -19,3 +19,10 @@ git config --global core.editor /usr/bin/vim
 ## [.vimrc](vimrc)
 
 ## [Vim cheat sheet](http://windowsbulletin.com/vimcheat/)
+
+## Useful stuff to add to my `.zshrc`
+
+```
+# avoid CTRL+D to close the terminal
+set -o ignoreeof
+```
